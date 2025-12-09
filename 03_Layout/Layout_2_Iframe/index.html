@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Admin Dashboard</h1>
+      <div class="user-menu">Welcome, Admin</div>
+    </header>
+    <div class="main">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="pages/dashboard.html" target="content-frame">Dashboard</a></li>
+          <li><a href="pages/users.html" target="content-frame">Users</a></li>
+          <li><a href="pages/reports.html" target="content-frame">Reports</a></li>
+          <li><a href="pages/settings.html" target="content-frame">Settings</a></li>
+          <li><a href="pages/help.html" target="content-frame">Help</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        <iframe name="content-frame" src="pages/dashboard.html"></iframe>
+      </section>
+    </div>
+    <footer class="footer">
+      <p>© 2025 Admin Panel | Version 1.0</p>
+    </footer>
+  </div>
+</body>
+
+</html>

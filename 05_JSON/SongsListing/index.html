@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TubeTracker</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="p-4">
+    <div class="container">
+        <h1 class="text-center text-primary mb-4">🎵 Excercise Songs List</h1>
+
+        <div class="card border-primary mb-4">
+            <div class="card-body">
+                <form id="songForm" class="row g-2">
+                    <input type="hidden" id="songId">
+
+                    <div class="col-md-5">
+                        <input type="text" id="title" class="form-control" placeholder="Song Title" required>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="url" id="url" class="form-control" placeholder="YouTube URL" required>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" id="submitBtn" class="btn btn-success w-100">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-3">
+            <input type="text" id="search" class="form-control w-50" placeholder="Search...">
+            <select id="sort" class="form-select w-25">
+                <option value="newest">Newest First</option>
+                <option value="az">A-Z</option>
+            </select>
+        </div>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Link</th>
+                    <th class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="songList"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
